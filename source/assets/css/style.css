@@ -11,6 +11,11 @@
 /* core overrides
 ----------------- */
 
+body {
+	padding-top: 70px;
+	font-family: 'Roboto', sans-serif;
+}
+
 .lead strong {
 	font-weight: 400;
 }
@@ -73,6 +78,19 @@ h1 {
 .metrogold-bg {background-color: #CCA55F; color: #ffffff;}
 .white-bg {background: #FFF;}
 .lightgrey-bg {background: #F2F2F2;}
+
+
+
+
+/* --------------------------------- *\
+
+	navbar
+
+\* --------------------------------- */
+
+.navbar-fixed-top .navbar-brand {
+    padding: 0 15px;
+}
 
 
 
