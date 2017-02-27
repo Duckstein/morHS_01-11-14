@@ -1,0 +1,119 @@
+/* ================================= *\
+
+	custom css
+	v1.0	2015-08-31	jd
+	
+\* ================================= */
+
+
+
+
+/* core overrides
+----------------- */
+
+.lead strong {
+	font-weight: 400;
+}
+
+
+
+
+/* typo
+------- */
+
+body {
+	font-weight: 300;
+}
+
+a {
+    color: #C0392B;
+    text-decoration: none;
+}
+
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: thin dotted;
+    outline-offset: -2px;
+}
+
+h1 {
+	font-weight: 300;
+}
+
+.display {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	letter-spacing: .2em;
+}
+
+.serif {
+	font-family: 'Playfair Display', serif;
+}
+
+
+
+
+/* color swatches
+----------------- */
+
+/* foreground */
+.moradared {color: #b5152b;}
+.metrored {color: #E74C3C;}
+.metrored-dark {color: #C0392B;}
+.metrosand {color: #CCA55F;}
+.metrobrown {color: #7F673C;}
+.white {color: #ffffff;}
+
+/* background */
+.moradared-bg {background-color: #b5152b; color: #ffffff;}
+.metrogold-bg {background-color: #CCA55F; color: #ffffff;}
+.white-bg {background: #FFF;}
+.lightgrey-bg {background: #F2F2F2;}
+
+
+
+
+/* --------------------------------- *\
+
+	responsive styles
+
+\* --------------------------------- */
+
+/* lg
+----- */ 
+
+@media (min-width: 1200px) {
+
+}
+
+/* md
+----- */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* sm
+----- */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* xs
+----- */
+
+@media (max-width: 767px) {
+
+}
+
+/* xs Portrait
+-------------- */
+
+@media (max-width: 479px) {
+	
+}
