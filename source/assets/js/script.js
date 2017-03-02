@@ -33,14 +33,17 @@ var icon = new google.maps.MarkerImage("assets/img/ui/mapneedle-metrored.png",
 var map = null;
 var currentPopup;
 
-
-function addMarker(lat, lng, info) {
+function addMarker(lat, lng, info, labeltext) {
 	var pt = new google.maps.LatLng(lat, lng);
 
-	var marker = new google.maps.Marker({
+	var marker = new MarkerWithLabel({
 		position: pt,
 		icon: icon,
-		map: map
+		map: map,
+		labelContent: labeltext,
+		labelAnchor: new google.maps.Point(0, 36),
+		labelClass: 'markerlabel',
+		labelStyle: {opacity: 0.75}
 	});
 	
 	var popup = new google.maps.InfoWindow({
@@ -86,10 +89,10 @@ function initialize() {
 	});
 			
 			
-	addMarker(54.152472,11.742843,'<div id="content"><div id="siteNotice"></div><h5 id="firstHeading" class="firstHeading">MORADA Hotel Arendsee</h5><div id="bodyContent"><p>Zoo Rostock - Tierwelten entdecken und Abenteuer erleben</p></div></div>');
+	addMarker(54.152472,11.742843,'<div id="content"><div id="siteNotice"></div><h5 id="firstHeading" class="firstHeading">MORADA Hotel Arendsee</h5><div id="bodyContent"><p>Zoo Rostock - Tierwelten entdecken und Abenteuer erleben</p></div></div>','MORADA Hotel Arendsee');
 
-	addMarker(54.152277,11.763401,'<div id="content"><div id="siteNotice"></div><h5 id="firstHeading" class="firstHeading">MORADA Strandhotel Kühlungsborn</h5><div id="bodyContent"><p>Exotische V&ouml;gel und Co. hautnah erleben</p></div></div>');
+	addMarker(54.152277,11.763401,'<div id="content"><div id="siteNotice"></div><h5 id="firstHeading" class="firstHeading">MORADA Strandhotel Kühlungsborn</h5><div id="bodyContent"><p>Exotische V&ouml;gel und Co. hautnah erleben</p></div></div>','MORADA Strandhotel Kühlungsborn');
 
-	addMarker(54.151510,11.766070,'<div id="content"><div id="siteNotice"></div><h5 id="firstHeading" class="firstHeading">MORADA Resort Kühlungsborn</h5><div id="bodyContent"><p>Geschichte der St.-Marien-Kirche in Rostock</p></div></div>');
+	addMarker(54.151510,11.766070,'<div id="content"><div id="siteNotice"></div><h5 id="firstHeading" class="firstHeading">MORADA Resort Kühlungsborn</h5><div id="bodyContent"><p>Geschichte der St.-Marien-Kirche in Rostock</p></div></div>','MORADA Resort Kühlungsborn');
 
 }

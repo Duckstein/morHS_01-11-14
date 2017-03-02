@@ -280,6 +280,24 @@ i.wetter {
 
 /* --------------------------------- *\
 
+	google maps
+
+\* --------------------------------- */
+
+.markerlabel {
+	color: #C0392B;
+	background-color: white;
+	font-size: 10px;
+	text-align: center;
+	font-weight: 700;
+	padding: 2px;
+}
+
+
+
+
+/* --------------------------------- *\
+
 	responsive styles
 
 \* --------------------------------- */
