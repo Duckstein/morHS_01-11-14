@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>MORADA HOTELS UND RESORTS HOTSPOT PORTAL</title>
+    <title>MORADA INTERNET HOTSPOT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
  
@@ -25,6 +25,37 @@
 </head>
 <body>
 
+<?php
+
+// zeitzone setzen
+date_default_timezone_set('Europe/Berlin');
+setlocale(LC_TIME, "de_DE.utf8");
+
+// heutiges Datum holen
+$wochentag = strftime("%A");
+$tag = strftime("%e");
+$monat = strftime("%B");
+$jahr = strftime("%G");
+$ausgabe = $wochentag. ', ' .$tag. '. ' .$monat. ' ' .$jahr;
+
+/* uhrzeitabhängige begrüssung
+------------------------------ */
+
+$stunde = date("G");
+
+if($stunde >="5" AND $stunde <"12"){
+	$salutation = "Guten Morgen!";
+	$keyvisual = "ansicht_strand.jpg";
+}elseif($stunde >="12" AND $stunde <"18"){
+	$salutation = "Guten Tag!";
+	$keyvisual = "ansicht_strand.jpg";
+}elseif($stunde >="17" AND $stunde <"5"){
+	$salutation = "Guten Abend!";
+	$keyvisual = "ansicht_abend.jpg";
+}
+
+?>
+
 <!-- navbar -->
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	<div class="container">
@@ -36,9 +67,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">
-                <img src="assets/img/logo/morada_internet-hotspot.png" alt="MORADA Internet Hotspot">
-            </a>
+            <a class="navbar-brand" href="#">MORADA INTERNET HOTSPOT</a>
         </div>
         
         <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -47,23 +76,110 @@
                     <a href="http://logoff.now"><i class="fa fa-power-off"></i> Abmelden</a>
                 </li>
             </ul>
+            <p class="navbar-text navbar-right"><?php echo $ausgabe ?></p>
         </div>
         
     </div>
 </nav>
 <!-- /navbar -->
 
-<!-- slider -->
-<section id="contentslider">
-
-	
-   
+<!-- article slider -->
+<section id="article-slider">
+    <div class="container">
+        <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    
+            <div class="carousel-inner">
+            
+                <div class="item active">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8"><img src="images/contentslider/luftaufnahme.jpg" class="img-responsive"></div>
+                            <div class="col-md-4">
+                            	<p class="subhead">WILLKOMMEN IN KÜHLUNGSBORN</p>
+                                <h2><?php echo $salutation ?></h2>
+                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
+                            </div>
+                        </div>
+                    </div>            
+                </div>
+                 
+                <div class="item">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8"><img src="images/contentslider/meerwasserschwimmbecken.jpg" class="img-responsive"></div>
+                            <div class="col-md-4">
+                            	<p class="subhead">MEERWASSERSCHWIMMBECKEN</p>
+                                <h2>Baden im Meer</h2>
+                                <p class="lead">Als einziges Hotel in Kühlungsborn speisen wir unser Schwimmbecken mit echtem Ostseewasser, das in einem aufwändigen, modernen Verfahren gefiltert wird. Unabhängig von Wind und Wetter können Sie bei uns so stets unbedenklich in der Ostsee baden.</p>
+                            </div>
+                        </div>
+                    </div>            
+                </div> 
+                
+                <div class="item">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8"><img src="images/contentslider/kelo-erdsauna.jpg" class="img-responsive"></div>
+                            <div class="col-md-4">
+                            	<p class="subhead">MORADA B&Aacute;LTICO SPA / KÜBOMARE</p>
+                                <h2>Wellnessoase</h2>
+                                <p class="lead">Die großzügige Saunalandschaft bietet vielfältige Möglichkeiten der Entspannung. Sieben verschiedene Saunen stehen Ihnen zur Verfügung. Darüber hinaus können Sie bei verschiedenen Wellness-Massagen im Spa-Bereich MORADA Báltico Spa die Seele baumeln lassen oder sich in unserem Fitness-Center auspowern.</p>
+                            </div>
+                        </div>
+                    </div>           
+                </div> 
+                
+                <div class="item">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8"><img src="images/contentslider/strandhotel_restaurant.jpg" class="img-responsive"></div>
+                            <div class="col-md-4">
+                            	<p class="subhead">MORADA STRANDHOTEL KÜHLUNGSBORN</p>
+                                <h2>Genuss mit Meerblick</h2>
+                                <p class="lead">Einzigartig in Kühlungsborn: die verglaste Front eines ganzen Stockwerks! Im vierten Obergeschoss unseres Strandhotels befindet sich unsere exklusive Panorama-Etage. Hier empfangen wir Sie in unserem luxuriöses Restaurant, unserer loungigen Hotelbar und unserer stilvollen Raucher-Lounge.</p>
+                            </div>
+                        </div>
+                    </div>           
+                </div>
+                
+            </div>
+    
+            <div class="controls">
+                <ul class="nav">
+                    <li data-target="#custom_carousel" data-slide-to="0" class="active"><a href="#"><img src="http://placehold.it/50x50"><small>Willkommen</small></a></li>
+                    <li data-target="#custom_carousel" data-slide-to="1"><a href="#"><img src="http://placehold.it/50x50"><small>Baden im Meer</small></a></li>
+                    <li data-target="#custom_carousel" data-slide-to="2"><a href="#"><img src="http://placehold.it/50x50"><small>Wellnessoase</small></a></li>
+                    <li data-target="#custom_carousel" data-slide-to="3"><a href="#"><img src="http://placehold.it/50x50"><small>Genuss mit Meerblick</small></a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
 </section>
-<!-- /slider -->
+<!-- /article slider -->
+
+<!-- appetizer -->
+<section id="appetizer">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-4">
+            	l
+            </div>
+            <div class="col-md-4">
+            	l
+            </div>
+            <div class="col-md-4">
+            	<div id="weather"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /appetizer -->
 
 <!-- javascript -->
 <script src="assets/js/jquery-1.11.3.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.simpleWeather.min.js"></script>
 <script src="assets/js/script.js"></script>
 
 </body>

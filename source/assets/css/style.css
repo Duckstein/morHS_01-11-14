@@ -20,6 +20,11 @@ body {
 	font-weight: 400;
 }
 
+section {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
 
 
 
@@ -47,6 +52,14 @@ a:focus {
 
 h1 {
 	font-weight: 300;
+}
+
+.subhead {
+	margin-top: 15px;
+	color: #CCC;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 12px;
 }
 
 .display {
@@ -88,8 +101,182 @@ h1 {
 
 \* --------------------------------- */
 
+.navbar-default {
+	background-color: #ffffff;
+}
+
+.navbar-fixed-top {
+	border-width: 0;
+}
+
 .navbar-fixed-top .navbar-brand {
-    padding: 0 15px;
+	font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	letter-spacing: .2em;
+}
+
+
+
+
+/* --------------------------------- *\
+
+	bootstrap carousel
+
+\* --------------------------------- */
+
+#custom_carousel .item {
+    color: #fff;
+    background-color: #363636;
+}
+
+#custom_carousel .item h2 {
+	font-size: 55px;
+    font-family: 'Playfair Display', serif;
+	margin-top: 0;
+}
+
+#custom_carousel .item .container-fluid {
+    padding-left: 0;
+}
+
+#custom_carousel .controls{
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:0;
+    margin:0;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    background:#ddd;
+}
+
+#custom_carousel .controls li {
+    display: table-cell;
+    width: 1%;
+    max-width: 90px;
+}
+
+#custom_carousel .controls li.active {
+    background-color:#eee;
+    border-bottom:3px solid #b5152b;
+}
+
+#custom_carousel .controls a small {
+    overflow:hidden;
+
+    font-size:10px;
+    margin-top:5px;
+    font-weight:bold;
+}
+
+
+
+
+/* --------------------------------- *\
+	
+	weather
+
+\* --------------------------------- */
+
+@font-face {
+    font-family: 'weather';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.woff') format('woff'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.ttf') format('truetype'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#weather {
+  margin: 0px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+i.wetter {
+  font-family: weather;
+  font-size: 150px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.0;
+}
+
+.icon-0:before { content: ":"; }
+.icon-1:before { content: "p"; }
+.icon-2:before { content: "S"; }
+.icon-3:before { content: "Q"; }
+.icon-4:before { content: "S"; }
+.icon-5:before { content: "W"; }
+.icon-6:before { content: "W"; }
+.icon-7:before { content: "W"; }
+.icon-8:before { content: "W"; }
+.icon-9:before { content: "I"; }
+.icon-10:before { content: "W"; }
+.icon-11:before { content: "I"; }
+.icon-12:before { content: "I"; }
+.icon-13:before { content: "I"; }
+.icon-14:before { content: "I"; }
+.icon-15:before { content: "W"; }
+.icon-16:before { content: "I"; }
+.icon-17:before { content: "W"; }
+.icon-18:before { content: "U"; }
+.icon-19:before { content: "Z"; }
+.icon-20:before { content: "Z"; }
+.icon-21:before { content: "Z"; }
+.icon-22:before { content: "Z"; }
+.icon-23:before { content: "Z"; }
+.icon-24:before { content: "E"; }
+.icon-25:before { content: "E"; }
+.icon-26:before { content: "3"; }
+.icon-27:before { content: "a"; }
+.icon-28:before { content: "A"; }
+.icon-29:before { content: "a"; }
+.icon-30:before { content: "A"; }
+.icon-31:before { content: "6"; }
+.icon-32:before { content: "1"; }
+.icon-33:before { content: "6"; }
+.icon-34:before { content: "1"; }
+.icon-35:before { content: "W"; }
+.icon-36:before { content: "1"; }
+.icon-37:before { content: "S"; }
+.icon-38:before { content: "S"; }
+.icon-39:before { content: "S"; }
+.icon-40:before { content: "M"; }
+.icon-41:before { content: "W"; }
+.icon-42:before { content: "I"; }
+.icon-43:before { content: "W"; }
+.icon-44:before { content: "a"; }
+.icon-45:before { content: "S"; }
+.icon-46:before { content: "U"; }
+.icon-47:before { content: "S"; }
+
+#weather h2 {
+  margin: 0 0 8px;
+  color: #363636;
+  font-size: 100px;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+#weather ul {
+  margin: 0;
+  padding: 0;
+}
+
+#weather li {
+  background: #fff;
+  background: rgba(255,255,255,0.90);
+  padding: 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+#weather .currently {
+  margin: 0 20px;
 }
 
 
