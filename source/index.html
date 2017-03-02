@@ -23,7 +23,7 @@
     <![endif]-->
 
 </head>
-<body>
+<body onload="initialize()">
 
 <?php
 
@@ -146,10 +146,10 @@ if($stunde >="5" AND $stunde <"12"){
     
             <div class="controls">
                 <ul class="nav">
-                    <li data-target="#custom_carousel" data-slide-to="0" class="active"><a href="#"><img src="http://placehold.it/50x50"><small>Willkommen</small></a></li>
-                    <li data-target="#custom_carousel" data-slide-to="1"><a href="#"><img src="http://placehold.it/50x50"><small>Baden im Meer</small></a></li>
-                    <li data-target="#custom_carousel" data-slide-to="2"><a href="#"><img src="http://placehold.it/50x50"><small>Wellnessoase</small></a></li>
-                    <li data-target="#custom_carousel" data-slide-to="3"><a href="#"><img src="http://placehold.it/50x50"><small>Genuss mit Meerblick</small></a></li>
+                    <li data-target="#custom_carousel" data-slide-to="0" class="active"><a href="#">Willkommen</a></li>
+                    <li data-target="#custom_carousel" data-slide-to="1"><a href="#">Baden im Meer</a></li>
+                    <li data-target="#custom_carousel" data-slide-to="2"><a href="#">Wellnessoase</a></li>
+                    <li data-target="#custom_carousel" data-slide-to="3"><a href="#">Genuss mit Meerblick</a></li>
                 </ul>
             </div>
             
@@ -163,10 +163,10 @@ if($stunde >="5" AND $stunde <"12"){
 	<div class="container">
     	<div class="row">
         	<div class="col-md-4">
-            	l
+            	<img src="images/contentslider/strandhotel_restaurant.jpg" class="img-responsive">
             </div>
             <div class="col-md-4">
-            	l
+            	<img src="images/contentslider/kelo-erdsauna.jpg" class="img-responsive">
             </div>
             <div class="col-md-4">
             	<div id="weather"></div>
@@ -176,10 +176,28 @@ if($stunde >="5" AND $stunde <"12"){
 </section>
 <!-- /appetizer -->
 
+<!-- map -->
+<section id="map">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-12">
+            	<!-- google maps -->
+                <script type="text/javascript">
+					
+				</script>
+				<div id="tripmap" style="width: 100%; height: 260px;"></div>
+                <!-- /google maps -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /map -->
+
 <!-- javascript -->
 <script src="assets/js/jquery-1.11.3.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery.simpleWeather.min.js"></script>
+<script src="https://maps.google.com/maps/api/js?v=3&sensor=false" type="text/javascript"></script>
 <script src="assets/js/script.js"></script>
 
 </body>
