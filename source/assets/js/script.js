@@ -32,9 +32,11 @@ var icon = new google.maps.MarkerImage("assets/img/ui/mapneedle-metrored.png",
 	new google.maps.Point(16, 32));
 var map = null;
 var currentPopup;
+var bounds = new google.maps.LatLngBounds();
 
 function addMarker(lat, lng, info, labeltext) {
 	var pt = new google.maps.LatLng(lat, lng);
+	bounds.extend(pt);
 
 	var marker = new MarkerWithLabel({
 		position: pt,
@@ -73,11 +75,10 @@ function addMarker(lat, lng, info, labeltext) {
 function initialize() {
 	
 	map = new google.maps.Map(document.getElementById("tripmap"), {
-		center: new google.maps.LatLng(54.153408, 11.754867),
-		scrollwheel: false,
+		center: new google.maps.LatLng(0, 0),
 		zoom: 15,
 		mapTypeId: google.maps.MapTypeId.ROADMAP,
-		mapTypeControl: false,
+		mapTypeControl: true,
 		mapTypeControlOptions: {
 			style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR
 		},
@@ -89,10 +90,13 @@ function initialize() {
 	});
 			
 			
-	addMarker(54.152472,11.742843,'<div id="content"><div id="siteNotice"></div><h5 id="firstHeading" class="firstHeading">MORADA Hotel Arendsee</h5><div id="bodyContent"><p>Zoo Rostock - Tierwelten entdecken und Abenteuer erleben</p></div></div>','MORADA Hotel Arendsee');
+	addMarker(54.152472,11.742843,'<div class="custom-info-window"><h5>MORADA Hotel Arendsee</h5><p>Sometext</p></div>','MORADA Hotel Arendsee');
 
 	addMarker(54.152277,11.763401,'<div id="content"><div id="siteNotice"></div><h5 id="firstHeading" class="firstHeading">MORADA Strandhotel Kühlungsborn</h5><div id="bodyContent"><p>Exotische V&ouml;gel und Co. hautnah erleben</p></div></div>','MORADA Strandhotel Kühlungsborn');
 
 	addMarker(54.151510,11.766070,'<div id="content"><div id="siteNotice"></div><h5 id="firstHeading" class="firstHeading">MORADA Resort Kühlungsborn</h5><div id="bodyContent"><p>Geschichte der St.-Marien-Kirche in Rostock</p></div></div>','MORADA Resort Kühlungsborn');
+	
+	center = bounds.getCenter();
+	map.fitBounds(bounds);
 
 }
