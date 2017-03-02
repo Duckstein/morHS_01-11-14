@@ -21,8 +21,16 @@ body {
 }
 
 section {
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+header {
+	padding-bottom: 30px;
+}
+
+#appetizer {
+	background: #f2f2f2;
 }
 
 
@@ -121,50 +129,57 @@ h1 {
 
 /* --------------------------------- *\
 
-	bootstrap carousel
+	custom search
 
 \* --------------------------------- */
 
-#custom_carousel .item {
-    color: #fff;
-    background-color: #363636;
+.gsc-control-cse .gsc-table-result {
+	font-family : inherit;
 }
 
-#custom_carousel .item h2 {
-	font-size: 55px;
-    font-family: 'Playfair Display', serif;
-	margin-top: 0;
+.gsc-control-cse .gsc-input-box {
+	height : inherit;
 }
 
-#custom_carousel .item .container-fluid {
-    padding-left: 0;
+input.gsc-input,
+.gsc-input-box,
+.gsc-input-box-hover,
+.gsc-input-box-focus,
+.gsc-search-button, input.gsc-search-button-v2 {
+	box-sizing  : content-box;
+	line-height : normal;
+	margin-top  : 0px;
 }
 
-#custom_carousel .controls{
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding:0;
-    margin:0;
-    white-space: nowrap;
-    text-align: center;
-    position: relative;
-    background:#ddd;
+
+
+
+/* --------------------------------- *\
+
+	cards
+
+\* --------------------------------- */
+
+.carditem {
+    background: #ffffff;
 }
 
-#custom_carousel .controls li {
-    display: table-cell;
-    width: 1%;
-    max-width: 90px;
+.carditem hr {
+    margin-bottom: 15px;
 }
 
-#custom_carousel .controls li.active {
-    background-color:#eee;
-    border-bottom:3px solid #b5152b;
+.carditem-body {
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
-#custom_carousel .controls a {
-    overflow:hidden;
-	color: #363636;
+.carditem-footer {
+    font-family: "Montserrat",sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0 15px 15px;
+    text-align: right;
+    text-transform: uppercase;
 }
 
 

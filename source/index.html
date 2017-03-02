@@ -83,93 +83,72 @@ if($stunde >="5" AND $stunde <"12"){
 </nav>
 <!-- /navbar -->
 
-<!-- article slider -->
-<section id="article-slider">
-    <div class="container">
-        <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="6000">
-    
-            <div class="carousel-inner">
-            
-                <div class="item active">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-8"><img src="images/contentslider/luftaufnahme.jpg" class="img-responsive"></div>
-                            <div class="col-md-4">
-                            	<p class="subhead">WILLKOMMEN IN KÜHLUNGSBORN</p>
-                                <h2><?php echo $salutation ?></h2>
-                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-                            </div>
-                        </div>
-                    </div>            
-                </div>
-                 
-                <div class="item">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-8"><img src="images/contentslider/meerwasserschwimmbecken.jpg" class="img-responsive"></div>
-                            <div class="col-md-4">
-                            	<p class="subhead">MEERWASSERSCHWIMMBECKEN</p>
-                                <h2>Baden im Meer</h2>
-                                <p class="lead">Als einziges Hotel in Kühlungsborn speisen wir unser Schwimmbecken mit echtem Ostseewasser, das in einem aufwändigen, modernen Verfahren gefiltert wird. Unabhängig von Wind und Wetter können Sie bei uns so stets unbedenklich in der Ostsee baden.</p>
-                            </div>
-                        </div>
-                    </div>            
-                </div> 
-                
-                <div class="item">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-8"><img src="images/contentslider/kelo-erdsauna.jpg" class="img-responsive"></div>
-                            <div class="col-md-4">
-                            	<p class="subhead">MORADA B&Aacute;LTICO SPA / KÜBOMARE</p>
-                                <h2>Wellnessoase</h2>
-                                <p class="lead">Die großzügige Saunalandschaft bietet vielfältige Möglichkeiten der Entspannung. Sieben verschiedene Saunen stehen Ihnen zur Verfügung. Darüber hinaus können Sie bei verschiedenen Wellness-Massagen im Spa-Bereich MORADA Báltico Spa die Seele baumeln lassen oder sich in unserem Fitness-Center auspowern.</p>
-                            </div>
-                        </div>
-                    </div>           
-                </div> 
-                
-                <div class="item">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-8"><img src="images/contentslider/strandhotel_restaurant.jpg" class="img-responsive"></div>
-                            <div class="col-md-4">
-                            	<p class="subhead">MORADA STRANDHOTEL KÜHLUNGSBORN</p>
-                                <h2>Genuss mit Meerblick</h2>
-                                <p class="lead">Einzigartig in Kühlungsborn: die verglaste Front eines ganzen Stockwerks! Im vierten Obergeschoss unseres Strandhotels befindet sich unsere exklusive Panorama-Etage. Hier empfangen wir Sie in unserem luxuriöses Restaurant, unserer loungigen Hotelbar und unserer stilvollen Raucher-Lounge.</p>
-                            </div>
-                        </div>
-                    </div>           
-                </div>
-                
+<!-- hero -->
+<header>
+	<div class="container">
+    	<div class="row">
+        	<div class="col-xs-12">
+            	<img src="images/hero/ansicht_abend.jpg" class="img-responsive">
             </div>
-    
-            <div class="controls">
-                <ul class="nav">
-                    <li data-target="#custom_carousel" data-slide-to="0" class="active"><a href="#">Willkommen</a></li>
-                    <li data-target="#custom_carousel" data-slide-to="1"><a href="#">Baden im Meer</a></li>
-                    <li data-target="#custom_carousel" data-slide-to="2"><a href="#">Wellnessoase</a></li>
-                    <li data-target="#custom_carousel" data-slide-to="3"><a href="#">Genuss mit Meerblick</a></li>
-                </ul>
+        </div>
+    </div>
+</header>
+<!-- /hero -->
+
+<!-- apps -->
+<section id="apps">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-4">
+            	asdf
             </div>
-            
+            <div class="col-md-4">
+            	<script>
+					(function() {
+						var cx = '016933083796092544937:n7wr0teiqu4';
+						var gcse = document.createElement('script');
+						gcse.type = 'text/javascript';
+						gcse.async = true;
+						gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+						var s = document.getElementsByTagName('script')[0];
+						s.parentNode.insertBefore(gcse, s);
+					})();
+				</script>
+                <gcse:search></gcse:search>
+            </div>
+            <div class="col-md-4">
+            	<div id="weather"></div>
+            </div>
         </div>
     </div>
 </section>
-<!-- /article slider -->
+<!-- /apps -->
 
 <!-- appetizer -->
 <section id="appetizer">
 	<div class="container">
     	<div class="row">
-        	<div class="col-md-4">
+        	<div class="col-md-3">
+            	<div class="carditem">
+                	<img src="images/contentslider/meerwasserschwimmbecken.jpg" class="img-responsive">
+                	<div class="carditem-body">
+                        <h4>Unsere Meerwasserwelt – Einzigartig mit echtem Ostseewasser</h4>
+                        <p>Egal wie turbulent das Wetter draußen an der Küste auch sein mag – in unserem KÜBOMARE können Sie jederzeit indoor in der Ostsee baden! Unsere Schwimmbecken werden mit echtem Ostseewasser gespeist, das in der hauseigenen Filteranlage aufwändig für Sie aufbereitet wird.</p>
+                    </div>
+                    <hr>
+                    <div class="carditem-footer">
+                    	<a href="#" title="title" target="_blank">Mehr Informationen <i class="fa fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        	<div class="col-md-3">
             	<img src="images/contentslider/strandhotel_restaurant.jpg" class="img-responsive">
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
             	<img src="images/contentslider/kelo-erdsauna.jpg" class="img-responsive">
             </div>
-            <div class="col-md-4">
-            	<div id="weather"></div>
+            <div class="col-md-3">
+            	<img src="images/contentslider/luftaufnahme.jpg" class="img-responsive">
             </div>
         </div>
     </div>
