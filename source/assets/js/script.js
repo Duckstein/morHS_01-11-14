@@ -90,11 +90,11 @@ function initialize() {
 	});
 			
 			
-	addMarker(54.152472,11.742843,'<div class="custom-info-window"><h5>MORADA Hotel Arendsee</h5><p>Sometext</p></div>','MORADA Hotel Arendsee');
+	addMarker(54.152472,11.742843,'<div class="custom-info-window"><h5>MORADA Hotel Arendsee</h5><p>Ostseeallee 30<br>18225 Ostseebad Kühlungsborn</p>Telefon: 03 82 93 / 70-300<br>Hotline: 0 800 / 123 26 26</p><a href="http://arendsee.morada.de" target="blank" class="btn btn-primary btn-sm"><i class="fa fa-home"></i> Homepage</a></div>','MORADA Hotel Arendsee');
 
-	addMarker(54.152277,11.763401,'<div id="content"><div id="siteNotice"></div><h5 id="firstHeading" class="firstHeading">MORADA Strandhotel Kühlungsborn</h5><div id="bodyContent"><p>Exotische V&ouml;gel und Co. hautnah erleben</p></div></div>','MORADA Strandhotel Kühlungsborn');
+	addMarker(54.152277,11.763401,'<div class="custom-info-window"><h5>MORADA Strandhotel Kühlungsborn</h5><p>Rudolf-Breitscheid-Straße<br>18225 Ostseebad Kühlungsborn</p>Telefon: 03 82 93 / 4 31-0<br>Hotline: 0 800 / 123 32 32</p><a href="http://www.strandhotel-kuehlungsborn.de/" target="blank" class="btn btn-primary btn-sm"><i class="fa fa-home"></i> Homepage</a></div>','MORADA Strandhotel Kühlungsborn');
 
-	addMarker(54.151510,11.766070,'<div id="content"><div id="siteNotice"></div><h5 id="firstHeading" class="firstHeading">MORADA Resort Kühlungsborn</h5><div id="bodyContent"><p>Geschichte der St.-Marien-Kirche in Rostock</p></div></div>','MORADA Resort Kühlungsborn');
+	addMarker(54.151510,11.766070,'<div class="custom-info-window"><h5>MORADA Resort Kühlungsborn</h5><p>Hafenstraße 2<br>18225 Ostseebad Kühlungsborn</p>Telefon: 03 82 93 / 67-0<br>Hotline: 0 800 / 123 12 12</p><a href="http://kuehlungsborn.morada.de" target="blank" class="btn btn-primary btn-sm"><i class="fa fa-home"></i> Homepage</a></div>','MORADA Resort Kühlungsborn');
 	
 	center = bounds.getCenter();
 	map.fitBounds(bounds);
