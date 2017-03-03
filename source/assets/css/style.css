@@ -30,7 +30,7 @@ header {
 }
 
 #appetizer {
-	background: #f2f2f2;
+	background: #F2F3C8;
 }
 
 
@@ -60,6 +60,7 @@ a:focus {
 
 h1 {
 	font-weight: 300;
+	margin-top: 0;
 }
 
 .subhead {
@@ -122,6 +123,46 @@ h1 {
     font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	letter-spacing: .2em;
+}
+
+
+
+
+/* --------------------------------- *\
+
+	hero
+
+\* --------------------------------- */
+
+.keyvisual .col-xs-12 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.keyvisualsteadyhalf {
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    width: 100%;
+	background-image: url(../../images/hero/morada_kuehlungsborn.jpg);
+}
+
+
+
+
+/* --------------------------------- *\
+
+	kübomare
+
+\* --------------------------------- */
+
+#kuebomare {
+	background: url("../../images/hero/wellness.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 
