@@ -68,44 +68,6 @@ h1, h2, h3 {
 	border-bottom: 1px solid #363636;
 }
 
-.subhead {
-	margin-top: 15px;
-	color: #CCC;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
-	font-size: 12px;
-}
-
-.display {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
-	letter-spacing: .2em;
-}
-
-.serif {
-	font-family: 'Playfair Display', serif;
-}
-
-
-
-
-/* color swatches
------------------ */
-
-/* foreground */
-.moradared {color: #b5152b;}
-.metrored {color: #E74C3C;}
-.metrored-dark {color: #C0392B;}
-.metrosand {color: #CCA55F;}
-.metrobrown {color: #7F673C;}
-.white {color: #ffffff;}
-
-/* background */
-.moradared-bg {background-color: #b5152b; color: #ffffff;}
-.metrogold-bg {background-color: #CCA55F; color: #ffffff;}
-.white-bg {background: #FFF;}
-.lightgrey-bg {background: #F2F2F2;}
-
 
 
 
@@ -114,10 +76,6 @@ h1, h2, h3 {
 	navbar
 
 \* --------------------------------- */
-
-.navbar-default {
-	background-color: #ffffff;
-}
 
 .navbar-fixed-top {
 	border-width: 0;
@@ -443,5 +401,10 @@ i.wetter {
 	.keyvisualsteadyhalf {
 		height: 360px;
 		background-image: url(../../images/hero/morada_kuehlungsborn_479.jpg);
+	}
+	
+	.navbar-fixed-top .navbar-brand {
+		font-size: 11px;
+		letter-spacing: .05em;
 	}
 }
