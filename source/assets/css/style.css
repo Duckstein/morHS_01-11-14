@@ -31,6 +31,7 @@ header {
 
 #appetizer {
 	background: #F2F3C8;
+	padding-bottom: 0;
 }
 
 
@@ -140,12 +141,10 @@ h1 {
 }
 
 .keyvisualsteadyhalf {
-    background-position: center center;
-    background-size: cover;
-    height: 500px;
-    position: relative;
-    width: 100%;
-	background-image: url(../../images/hero/morada_kuehlungsborn.jpg);
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	width: 100%;
 }
 
 
@@ -158,7 +157,6 @@ h1 {
 \* --------------------------------- */
 
 #kuebomare {
-	background: url("../../images/hero/wellness.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -203,6 +201,7 @@ input.gsc-input,
 
 .carditem {
     background: #ffffff;
+	margin-bottom: 30px;
 }
 
 .carditem hr {
@@ -381,33 +380,64 @@ i.wetter {
 ----- */ 
 
 @media (min-width: 1200px) {
-
+	.keyvisualsteadyhalf {
+		height: 550px;
+		background-image: url(../../images/hero/morada_kuehlungsborn_1900.jpg);
+	}
+	
+	#kuebomare {
+		background: url("../../images/hero/wellness.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+	}
 }
 
 /* md
 ----- */
 
 @media (min-width: 992px) and (max-width: 1199px) {
-
+	.keyvisualsteadyhalf {
+		height: 500px;
+		background-image: url(../../images/hero/morada_kuehlungsborn.jpg);
+	}
+	
+	#kuebomare {
+		background: url("../../images/hero/wellness_992.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+	}
 }
 
 /* sm
 ----- */
 
 @media (min-width: 768px) and (max-width: 991px) {
-
+	.keyvisualsteadyhalf {
+		height: 400px;
+		background-image: url(../../images/hero/morada_kuehlungsborn_991.jpg);
+	}
+	
+	#kuebomare {
+		background: url("../../images/hero/wellness_768.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+	}
 }
 
 /* xs
 ----- */
 
 @media (max-width: 767px) {
-
+	.keyvisualsteadyhalf {
+		height: 400px;
+		background-image: url(../../images/hero/morada_kuehlungsborn_767.jpg);
+	}
+	
+	#kuebomare {
+		background: #F2F3C8;
+	}
 }
 
 /* xs Portrait
 -------------- */
 
 @media (max-width: 479px) {
-	
+	.keyvisualsteadyhalf {
+		height: 360px;
+		background-image: url(../../images/hero/morada_kuehlungsborn_479.jpg);
+	}
 }
