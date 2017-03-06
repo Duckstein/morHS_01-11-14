@@ -45,21 +45,8 @@ $monat = strftime("%B");
 $jahr = strftime("%G");
 $ausgabe = $wochentag. ', ' .$tag. '. ' .$monat. ' ' .$jahr;
 
-/* uhrzeitabhängige begrüssung
------------------------------- */
-
-$stunde = date("G");
-
-if($stunde >="5" AND $stunde <"12"){
-	$salutation = "Guten Morgen!";
-	$keyvisual = "ansicht_strand.jpg";
-}elseif($stunde >="12" AND $stunde <"18"){
-	$salutation = "Guten Tag!";
-	$keyvisual = "ansicht_strand.jpg";
-}elseif($stunde >="17" AND $stunde <"5"){
-	$salutation = "Guten Abend!";
-	$keyvisual = "ansicht_abend.jpg";
-}
+// webcamparam
+$jetztzeit = time();
 
 ?>
 
@@ -104,8 +91,8 @@ if($stunde >="5" AND $stunde <"12"){
 </header>
 <!-- /hero -->
 
-<!-- apps -->
-<section id="apps">
+<!-- newsletter -->
+<section id="newsletter">
 	<div class="container">
     	<div class="row">
         	<div class="col-sm-4">
@@ -119,7 +106,7 @@ if($stunde >="5" AND $stunde <"12"){
         </div>
     </div>
 </section>
-<!-- /apps -->
+<!-- /newsletter -->
 
 <!-- kuebomare -->
 <section id="kuebomare">
@@ -182,32 +169,79 @@ if($stunde >="5" AND $stunde <"12"){
 </section>
 <!-- /appetizer -->
 
-<div class="container">
-	<div class="row">
-    	<div class="row">
-        	<div class="col-md-4">
-            	f
+<!-- apps -->
+<section id="apps">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+            	<div class="panel panel-default">
+                	<div class="panel-heading">Webcam Kühlungsborn</div>
+                    <div class="panel-body">
+                        <p>
+                            <img src="https://www.morada.de/livebilder/livebildpos1_640.jpg?r=' .$jetztzeit. '" name="webcambild" alt="" class="img-responsive center-block">
+                        </p>
+                        <p class="text-center">
+                            <a href="javascript:reloadCam1()" title="Genießen Sie die Kameraposition 1 unserer Webcam vom Hotel an der Ostsee in Kühlungsborn." class="btn btn-success"><i class="fa fa-camera"></i> 1</a>
+                            <a href="javascript:reloadCam2()" title="Genießen Sie die Kameraposition 2 unserer Webcam vom Hotel an der Ostsee in Kühlungsborn." class="btn btn-success"><i class="fa fa-camera"></i> 2</a>
+                            <a href="javascript:reloadCam3()" title="Genießen Sie die Kameraposition 3 unserer Webcam vom Hotel an der Ostsee in Kühlungsborn." class="btn btn-success"><i class="fa fa-camera"></i> 3</a>
+                            <a href="javascript:reloadCam4()" title="Genießen Sie die Kameraposition 4 unserer Webcam vom Hotel an der Ostsee in Kühlungsborn." class="btn btn-success"><i class="fa fa-camera"></i> 4</a>
+                            <a href="javascript:reloadCam5()" title="Genießen Sie die Kameraposition 5 unserer Webcam vom Hotel an der Ostsee in Kühlungsborn." class="btn btn-success"><i class="fa fa-camera"></i> 5</a>
+                        </p>
+                        <script>
+                            function reloadCam1(){window.document.images.webcambild.src=pos1.src}function reloadCam2(){window.document.images.webcambild.src=pos2.src}function reloadCam3(){window.document.images.webcambild.src=pos3.src}function reloadCam4(){window.document.images.webcambild.src=pos4.src}function reloadCam5(){window.document.images.webcambild.src=pos5.src}pos1=new Image,pos1.src="https://www.morada.de/livebilder/livebildpos1_640.jpg?.r=<?php echo $jetztzeit ?>",pos2=new Image,pos2.src="https://www.morada.de/livebilder/livebildpos2_640.jpg?r=<?php echo $jetztzeit ?>",pos3=new Image,pos3.src="https://www.morada.de/livebilder/livebildpos3_640.jpg?r=<?php echo $jetztzeit ?>",pos4=new Image,pos4.src="https://www.morada.de/livebilder/livebildpos4_640.jpg?r=<?php echo $jetztzeit ?>",pos5=new Image,pos5.src="https://www.morada.de/livebilder/livebildpos5_640.jpg?r=<?php echo $jetztzeit ?>";
+                        </script>
+                    </div>
+                </div>
             </div>
             <div class="col-md-4">
-            	<script>
-					(function() {
-						var cx = '016933083796092544937:n7wr0teiqu4';
-						var gcse = document.createElement('script');
-						gcse.type = 'text/javascript';
-						gcse.async = true;
-						gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-						var s = document.getElementsByTagName('script')[0];
-						s.parentNode.insertBefore(gcse, s);
-					})();
-				</script>
-                <gcse:search></gcse:search>
+            	<div class="panel panel-default">
+                	<div class="panel-heading">Aktuelles Wetter</div>
+                    <div class="panel-body">
+                		<div id="weather"></div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-4">
-            	<div id="weather"></div>
+            	<div class="panel panel-default">
+                	<div class="panel-heading">Websuche</div>
+                    <div class="panel-body">
+                    	<script>
+							(function() {
+								var cx = '016933083796092544937:n7wr0teiqu4';
+								var gcse = document.createElement('script');
+								gcse.type = 'text/javascript';
+								gcse.async = true;
+								gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+								var s = document.getElementsByTagName('script')[0];
+								s.parentNode.insertBefore(gcse, s);
+							})();
+						</script>
+						<gcse:search></gcse:search>
+                    </div>
+                </div>
+                
+				<div class="panel panel-default">
+                	<div class="panel-heading">Weitere Informationen</div>
+                    <div class="list-group">
+                        <a href="http://www.morada.de" target="_blank" class="list-group-item">
+                            <h4 class="list-group-item-heading">MORADA Hotels &amp; Resorts</h4>
+                            <p class="list-group-item-text">Urlaub in den schönsten Regionen Deutschlands</p>
+                        </a>
+                        <a href="http://www.strandhotel-kuehlungsborn.de" target="_blank" class="list-group-item">
+                            <h4 class="list-group-item-heading">MORADA Strandhotel Kühlungsborn</h4>
+                            <p class="list-group-item-text">Das exklusive Hotel an der Ostseeküste</p>
+                        </a>
+                        <a href="https://www.seniorenreisen.de" target="_blank" class="list-group-item">
+                            <h4 class="list-group-item-heading">SKAN-CLUB 60plus</h4>
+                            <p class="list-group-item-text">Reisen für die Generation 60+</p>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
+<!-- /apps -->
 
 <!-- map -->
 <section id="map">
