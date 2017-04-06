@@ -1,0 +1,55 @@
+/* --------------------------------- *\
+
+	strandhotel elements
+
+\* --------------------------------- */
+
+/* grid-item as on panoramaetage
+-------------------------------- */
+
+.grid-item {
+	padding-bottom: 45px;
+}
+
+/* typo
+------- */
+
+.grid-item h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	letter-spacing:.15em;
+	color: #e74c3c;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+
+/* sand button
+-------------- */
+
+.btn-sand {
+	background-color: #cca55f;
+	border: none;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 0.15em;
+	border-radius: 0;
+	padding: 12px;
+}
+
+.btn-sand.focus, .btn-sand:focus {
+    background-color: #cca55f;
+    border-color: #122b40;
+    color: #fff;
+}
+.btn-sand.active, .btn-sand:active, .btn-sand:hover {
+    background-color: #cca55f;
+    border: none;
+    color: #fff;
+	box-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+.btn-sand.active.focus, .btn-sand.active:focus, .btn-sand.active:hover, .btn-sand.focus:active, .btn-sand:active:focus, .btn-sand:active:hover {
+    background-color: #cca55f;
+    border-color: #122b40;
+    color: #fff;
+}
