@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MORADA INTERNET HOTSPOT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+ 
+    <!-- core css -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:300,400" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- custom css -->
+	<link href="assets/css/style.min.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body onload="initialize()">
+
+<?php
+
+// zeitzone setzen
+date_default_timezone_set('Europe/Berlin');
+setlocale(LC_TIME, "de_DE.utf8");
+
+// heutiges Datum holen
+$wochentag = strftime("%A");
+$tag = strftime("%e");
+$monat = strftime("%B");
+$jahr = strftime("%G");
+$ausgabe = $wochentag. ', ' .$tag. '. ' .$monat. ' ' .$jahr;
+
+// webcamparam
+$jetztzeit = time();
+
+?>
+
+<!-- navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+    
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">MORADA INTERNET HOTSPOT</a>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="http://logoff.now"><i class="fa fa-power-off"></i> Abmelden</a>
+                </li>
+            </ul>
+            <p class="navbar-text navbar-right"><?php echo $ausgabe ?></p>
+        </div>
+        
+    </div>
+</nav>
+<!-- /navbar -->
+
+<!-- hero -->
+<header>
+	<div class="container-fluid keyvisual">
+    	<div class="row">
+        	<div class="col-xs-12">
+            	<div id="keyvisual-element">
+					<div class="keyvisualsteadyhalf"></div>
+				</div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- /hero -->
+
+<!-- newsletter -->
+<section id="newsletter">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-sm-4">
+            	<img src="images/articles/newsletter-duo_on_ipad.jpg" class="img-responsive">
+            </div>
+            <div class="col-sm-8">
+            	<h1>Last-Minute-Angebote, Schnäppchen und wertvolle Urlaubstipps</h1>
+                <p class="lead">In regelmäßigen Abständen informieren wir Sie per E-Mail mit unserem Newsletter über aktuelle Angebote, Last-Minute-Aufenthalte und interessante Urlaubstipps für die schönsten Regionen Deutschlands.</p>
+                <a href="http://www.morada.de/infos/newsletter/" target="_blank" title="Kostenlosen Newsletter bestellen" class="btn btn-success btn-lg">Jetzt kostenlos erhalten!</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /newsletter -->
+
+<!-- kuebomare -->
+<section id="kuebomare">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-sm-6">
+            	<h1>KÜBOMARE &ndash; Besuchen Sie unsere Sauna- und Wellneswelt</h1>
+                <p class="lead">Sie wollen neue Kraft tanken, sich verwöhnen lassen, Körper und Seele eine Auszeit gönnen? Auf großzügigen 3.000 m² haben Sie in unserem Strandhotel auf vielfältige Art und Weise Gelegenheit dazu: Entdecken Sie unsere einmalige MORADA Wellnesswelt mit einer abwechslungsreichen Saunalandschaft, einem modernen Fitnessbereich, lassen Sie sich im Báltico Spa mit Massagen und Beautyanwendungen verwöhnen oder tauchen Sie in unserer Meerwasserwelt in echtes Ostseewasser ein – einzigartig in ganz Kühlungsborn!</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /kuebomare -->
+
+<!-- appetizer -->
+<section id="appetizer">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-4">
+            	<div class="carditem">
+                	<img src="images/contentslider/meerwasserschwimmbecken.jpg" class="img-responsive">
+                	<div class="carditem-body">
+                        <h4>Unsere Meerwasserwelt – Das Herzstück unseres Wellnessbereichs</h4>
+                        <p>Schwimmen in der Ostsee – indoor und bei jedem Wetter! Als einziges Hotel in ganz Kühlungsborn bieten wir Ihnen mit unserem einzigartigen KÜBOMARE ein Badeerlebnis der Extraklasse. In einem aufwändigen Filterverfahren wird unser Becken mit echtem Ostseewasser gespeist.</p>
+                    </div>
+                    <hr>
+                    <div class="carditem-footer">
+                    	<a href="http://www.strandhotel-kuehlungsborn.de/wellness/meerwasserschwimmhalle.php" title="Meerwasserwelt" target="_blank">Mehr Informationen <i class="fa fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        	<div class="col-md-4">
+            	<div class="carditem">
+                	<img src="images/contentslider/kelo-erdsauna.jpg" class="img-responsive">
+                	<div class="carditem-body">
+                        <h4>Unsere Saunawelt - Entspannung pur im KÜBOMARE</h4>
+                        <p>Mit dem KÜBOMARE bieten wir Ihnen eine einzigartige Wellnessoase: Sieben verschiedene Saunen – fünf im Innen- und weitere zwei im Außenbereich – sorgen für optimale Entspannung und Ruhe. Gönnen Sie Ihrem Körper und ihrer Seele eine Auszeit. An unserer Saunabar können Sie sich zudem erfrischen.</p>
+                    </div>
+                    <hr>
+                    <div class="carditem-footer">
+                    	<a href="http://www.strandhotel-kuehlungsborn.de/wellness/saunalandschaft.php" title="Saunawelt" target="_blank">Mehr Informationen <i class="fa fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+            	<div class="carditem">
+                	<img src="images/articles/kuebomare_massage.jpg" class="img-responsive">
+                	<div class="carditem-body">
+                        <h4>Unser Báltico Spa - Lassen Sie sich professionell verwöhnen</h4>
+                        <p>Was wäre ein Wellness Hotel ohne Massagen und Beautyanwendungen? In unserem Báltico Spa stehen Ihnen professionelle Kosmetikerinnen und Masseure für vielfältige Entspannungsbehandlungen zur Verfügung. Genießen Sie in angenehmer Atmosphäre zu sanften Klängen ein umfangreiches Verwöhn- und Schönheitsprogramm.</p>
+                    </div>
+                    <hr>
+                    <div class="carditem-footer">
+                    	<a href="http://www.strandhotel-kuehlungsborn.de/wellness/baltico-spa.php" title="Báltico Spa" target="_blank">Mehr Informationen <i class="fa fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /appetizer -->
+
+<!-- apps -->
+<section id="apps">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+            	<div class="panel panel-default">
+                	<div class="panel-heading">Webcam Kühlungsborn</div>
+                    <div class="panel-body">
+                        <p>
+                            <img src="https://www.morada.de/livebilder/livebildpos1_640.jpg?r=' .$jetztzeit. '" name="webcambild" alt="" class="img-responsive center-block">
+                        </p>
+                        <p class="text-center">
+                            <a href="javascript:reloadCam1()" title="Genießen Sie die Kameraposition 1 unserer Webcam vom Hotel an der Ostsee in Kühlungsborn." class="btn btn-default"><i class="fa fa-camera"></i> 1</a>
+                            <a href="javascript:reloadCam2()" title="Genießen Sie die Kameraposition 2 unserer Webcam vom Hotel an der Ostsee in Kühlungsborn." class="btn btn-default"><i class="fa fa-camera"></i> 2</a>
+                            <a href="javascript:reloadCam3()" title="Genießen Sie die Kameraposition 3 unserer Webcam vom Hotel an der Ostsee in Kühlungsborn." class="btn btn-default"><i class="fa fa-camera"></i> 3</a>
+                            <a href="javascript:reloadCam4()" title="Genießen Sie die Kameraposition 4 unserer Webcam vom Hotel an der Ostsee in Kühlungsborn." class="btn btn-default"><i class="fa fa-camera"></i> 4</a>
+                            <a href="javascript:reloadCam5()" title="Genießen Sie die Kameraposition 5 unserer Webcam vom Hotel an der Ostsee in Kühlungsborn." class="btn btn-default"><i class="fa fa-camera"></i> 5</a>
+                        </p>
+                        <script>
+                            function reloadCam1(){window.document.images.webcambild.src=pos1.src}function reloadCam2(){window.document.images.webcambild.src=pos2.src}function reloadCam3(){window.document.images.webcambild.src=pos3.src}function reloadCam4(){window.document.images.webcambild.src=pos4.src}function reloadCam5(){window.document.images.webcambild.src=pos5.src}pos1=new Image,pos1.src="https://www.morada.de/livebilder/livebildpos1_640.jpg?.r=<?php echo $jetztzeit ?>",pos2=new Image,pos2.src="https://www.morada.de/livebilder/livebildpos2_640.jpg?r=<?php echo $jetztzeit ?>",pos3=new Image,pos3.src="https://www.morada.de/livebilder/livebildpos3_640.jpg?r=<?php echo $jetztzeit ?>",pos4=new Image,pos4.src="https://www.morada.de/livebilder/livebildpos4_640.jpg?r=<?php echo $jetztzeit ?>",pos5=new Image,pos5.src="https://www.morada.de/livebilder/livebildpos5_640.jpg?r=<?php echo $jetztzeit ?>";
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+            	<div class="panel panel-default">
+                	<div class="panel-heading">Aktuelles Wetter</div>
+                    <div class="panel-body">
+                		<div id="weather"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+            	<div class="panel panel-default">
+                	<div class="panel-heading">Websuche</div>
+                    <div class="panel-body">
+                    	<script>
+							(function() {
+								var cx = '016933083796092544937:n7wr0teiqu4';
+								var gcse = document.createElement('script');
+								gcse.type = 'text/javascript';
+								gcse.async = true;
+								gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+								var s = document.getElementsByTagName('script')[0];
+								s.parentNode.insertBefore(gcse, s);
+							})();
+						</script>
+						<gcse:search></gcse:search>
+                    </div>
+                </div>
+                
+				<div class="panel panel-default">
+                	<div class="panel-heading">Weitere Informationen</div>
+                    <div class="list-group">
+                        <a href="http://www.morada.de" target="_blank" class="list-group-item">
+                            <h4 class="list-group-item-heading">MORADA Hotels &amp; Resorts</h4>
+                            <p class="list-group-item-text">Urlaub in den schönsten Regionen Deutschlands</p>
+                        </a>
+                        <a href="http://www.strandhotel-kuehlungsborn.de" target="_blank" class="list-group-item">
+                            <h4 class="list-group-item-heading">MORADA Strandhotel Kühlungsborn</h4>
+                            <p class="list-group-item-text">Das exklusive Hotel an der Ostseeküste</p>
+                        </a>
+                        <a href="https://www.seniorenreisen.de" target="_blank" class="list-group-item">
+                            <h4 class="list-group-item-heading">SKAN-CLUB 60plus</h4>
+                            <p class="list-group-item-text">Reisen für die Generation 60+</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /apps -->
+
+<!-- map -->
+<section id="map">
+	<div class="container-fluid">
+    	<div class="row">
+        	<div class="col-xs-12">
+				<div id="tripmap"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /map -->
+
+<footer>
+	<div class="container">
+    	<div class="row">
+        	<div class="col-xs-12 text-center">
+            	<p><small>&copy; <?php echo date("Y"); ?> MORADA Hotels &amp; Resorts</small></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- javascript -->
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.simpleWeather.min.js"></script>
+<script src="https://maps.google.com/maps/api/js?v=3&sensor=false" type="text/javascript"></script>
+<script src="assets/js/markerwithlabel.min.js"></script>
+<script src="assets/js/script.min.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2545117-5', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
