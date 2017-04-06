@@ -21,7 +21,7 @@ $(document).ready(function() {
  
 });
 
-var icon = new google.maps.MarkerImage("assets/img/ui/mapneedle-metrored.png",
+var icon = new google.maps.MarkerImage("/assets/img/ui/mapneedle-metrored.png",
 	new google.maps.Size(32, 32),
 	new google.maps.Point(0, 0),
 	new google.maps.Point(16, 32));
