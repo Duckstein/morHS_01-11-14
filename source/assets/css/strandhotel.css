@@ -14,21 +14,13 @@
 /* typo
 ------- */
 
-#panorama-etage h2 {
+#panorama h4 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	letter-spacing:.15em;
 	color: #CCA55F;
 	text-transform: uppercase;
 	margin-top: 20px;
-}
-
-#panorama-etage p {
-	line-height: 2em;
-}
-
-#panorama-etage .row {
-	margin-bottom: 30px;
 }
 
 /* sand button
