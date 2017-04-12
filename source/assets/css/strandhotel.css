@@ -53,3 +53,26 @@
     border-color: #122b40;
     color: #fff;
 }
+
+
+
+
+/* panels
+--------- */
+
+.panel-morada {
+	border: none;
+	background-color: #F2F2F2;
+}
+
+.panel-morada > .panel-heading {
+	background-color: #C0392B;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 0.15em;
+}
+
+.panel-morada > .list-group > .list-group-item {
+	background-color: #F2F2F2;
+}
