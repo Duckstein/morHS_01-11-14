@@ -4,6 +4,22 @@
 
 \* --------------------------------- */
 
+
+
+
+/* --------------------------------- *\
+
+	hero
+
+\* --------------------------------- */
+
+.keyvisualsteadyhalf-stra {
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	width: 100%;
+}
+
 /* grid-item as on panoramaetage
 -------------------------------- */
 
@@ -75,4 +91,63 @@
 
 .panel-morada > .list-group > .list-group-item {
 	background-color: #F2F2F2;
+}
+
+
+
+
+/* --------------------------------- *\
+
+	responsive styles
+
+\* --------------------------------- */
+
+/* lg
+----- */ 
+
+@media (min-width: 1200px) {
+	.keyvisualsteadyhalf-stra {
+		height: 550px;
+		background-image: url(../../images/hero/morada_strandhotel_1900.jpg);
+	}
+}
+
+/* md
+----- */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.keyvisualsteadyhalf-stra {
+		height: 500px;
+		background-image: url(../../images/hero/morada_strandhotel.jpg);
+	}
+}
+
+/* sm
+----- */
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.keyvisualsteadyhalf-stra {
+		height: 400px;
+		background-image: url(../../images/hero/morada_strandhotel_991.jpg);
+	}
+}
+
+/* xs
+----- */
+
+@media (max-width: 767px) {
+	.keyvisualsteadyhalf-stra {
+		height: 400px;
+		background-image: url(../../images/hero/morada_strandhotel_767.jpg);
+	}
+}
+
+/* xs Portrait
+-------------- */
+
+@media (max-width: 479px) {
+	.keyvisualsteadyhalf-stra {
+		height: 360px;
+		background-image: url(../../images/hero/morada_strandhotel_479.jpg);
+	}
 }
