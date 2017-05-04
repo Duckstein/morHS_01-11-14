@@ -73,6 +73,22 @@
 
 
 
+/* --------------------------------- *\
+
+	facebook
+
+\* --------------------------------- */
+
+#facebook {
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+
+
 /* panels
 --------- */
 
@@ -110,6 +126,10 @@
 		height: 550px;
 		background-image: url(../../images/hero/morada_strandhotel_1900.jpg);
 	}
+	
+	#facebook {
+		background: url("../../images/hero/the-sea.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+	}
 }
 
 /* md
@@ -119,6 +139,10 @@
 	.keyvisualsteadyhalf-stra {
 		height: 500px;
 		background-image: url(../../images/hero/morada_strandhotel.jpg);
+	}
+	
+	#facebook {
+		background: url("../../images/hero/the-sea_992.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
 	}
 }
 
@@ -130,6 +154,10 @@
 		height: 400px;
 		background-image: url(../../images/hero/morada_strandhotel_991.jpg);
 	}
+	
+	#facebook {
+		background: url("../../images/hero/the-sea_768.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+	}
 }
 
 /* xs
@@ -139,6 +167,10 @@
 	.keyvisualsteadyhalf-stra {
 		height: 400px;
 		background-image: url(../../images/hero/morada_strandhotel_767.jpg);
+	}
+	
+	#facebook {
+		background: #F2F3C8;
 	}
 }
 
