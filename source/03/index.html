@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MORADA INTERNET HOTSPOT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+ 
+    <!-- core css -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:300,400" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- custom css -->
+	<link href="assets/css/style.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body onload="initialize()">
+
+<?php
+
+// zeitzone setzen
+date_default_timezone_set('Europe/Berlin');
+setlocale(LC_TIME, "de_DE.utf8");
+
+// heutiges Datum holen
+$wochentag = strftime("%A");
+$tag = strftime("%e");
+$monat = strftime("%B");
+$jahr = strftime("%G");
+$ausgabe = $wochentag. ', ' .$tag. '. ' .$monat. ' ' .$jahr;
+
+// webcamparam
+$jetztzeit = time();
+
+?>
+
+<!-- navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+    
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">MORADA INTERNET HOTSPOT</a>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="http://logoff.now"><i class="fa fa-power-off"></i> Abmelden</a>
+                </li>
+            </ul>
+            <p class="navbar-text navbar-right"><?php echo $ausgabe ?> <span id="weather"></span></p>
+        </div>
+        
+    </div>
+</nav>
+<!-- /navbar -->
+
+<!-- hero -->
+<header>
+	<div class="container-fluid keyvisual">
+    	<div class="row">
+        	<div class="col-xs-12">
+            	<div id="keyvisual-element">
+					<div class="keyvisualsteadyhalf"></div>
+				</div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- /hero -->
+
+<!-- newsletter -->
+<section id="newsletter">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-sm-4">
+            	<img src="images/articles/newsletter-duo_on_ipad.jpg" class="img-responsive">
+            </div>
+            <div class="col-sm-8">
+            	<h1>Last-Minute-Angebote, Schnäppchen und wertvolle Urlaubstipps</h1>
+                <p class="lead">In regelmäßigen Abständen informieren wir Sie per E-Mail mit unserem Newsletter über aktuelle Angebote, Last-Minute-Aufenthalte und interessante Urlaubstipps für die schönsten Regionen Deutschlands.</p>
+                <a href="http://www.morada.de/infos/newsletter/" target="_blank" title="Kostenlosen Newsletter bestellen" class="btn btn-success btn-lg">Jetzt kostenlos erhalten!</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /newsletter -->
+
+<!-- promotion -->
+<section id="promotion">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-sm-8">
+            	<h1>Ihre Gastronomie im MORADA Hotel Isetal</h1>
+                <p class="lead">Im <strong>traditionellen Kamin-Restaurant Jägerhof </strong>können Sie aus einer umfangreichen Speisekarte von Putenmedaillons bis zum klassischen Jägerschnitzel auswählen. <strong>Saisonale kulinarische Hochgenüsse</strong> wie zur Spargel- oder Grünkohlzeit werden selbstverständlich mit verschiedenen Gerichten zelebriert. Als Gast unseres Hotels erwartet Sie im Rahmen der Halbpension am Abend in der Regel ein leckeres Buffet.</p>
+                <p class="lead">An warmen Tagen wird im <strong>Biergarten am Ufer der Ise</strong> zur Geselligkeit aufgerufen, frisch gezapftes Bier und zartschmelzendes Eis genossen und gegrillt.</p>
+                <p class="lead">Das <strong>im Kolonialstil gehaltene Café Kastanienoase</strong> eignet sich ganzjährig hervorragend für eine Kaffeepause und schmeichelt dem Gaumen mit leckeren Kuchen und Törtchen.</p>
+                <p class="lead">Ein Besuch unserer gemütlichen Hotelbars ist der ideale Ausklang eines jeden Tages.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /promotion -->
+
+<!-- appetizer -->
+<section id="appetizer">
+	<div class="container">
+    	<div class="row">
+            <div class="col-sm-6">
+                <img src="images/articles/bootssteg.jpg" class="img-responsive">
+            </div>
+            <div class="col-sm-6">
+                <h1>Erlebnisbootsverleih ISE-TOUR</h1>
+                <p class="lead">&hellip; befindet sich direkt am Hotel &ndash; ein Riesenspaß für Jedermann ist hier garantiert!</p>
+                <p class="lead">Für individuelle Touren entlang der Ise oder auf dem Mühlensee stellt Ihnen unser Bootsverleih Kajaks, Kanadier, Tret- und Ruderboote nach Wahl zur Verfügung.</p>
+                <p class="lead">Ein ganz besonderes Erlebnis erfahren Sie bei unseren stimmungsvollen Kahnfahrten.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /appetizer -->
+
+<!-- map -->
+<section id="map">
+	<div class="container-fluid">
+    	<div class="row">
+        	<div class="col-xs-12">
+				<div id="tripmap"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /map -->
+
+<footer>
+	<div class="container">
+    	<div class="row">
+        	<div class="col-xs-12 text-center">
+            	<p><small>&copy; <?php echo date("Y"); ?> MORADA Hotels &amp; Resorts</small></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- javascript -->
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.simpleWeather.min.js"></script>
+<script src="https://maps.google.com/maps/api/js?v=3&sensor=false" type="text/javascript"></script>
+<script src="assets/js/markerwithlabel.min.js"></script>
+<script src="assets/js/script.min.js"></script>
+
+</body>
+</html>
