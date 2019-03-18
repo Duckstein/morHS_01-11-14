@@ -215,11 +215,11 @@ input.gsc-input,
 @media (min-width: 1200px) {
 	.keyvisualsteadyhalf {
 		height: 550px;
-		background-image: url(../../images/hero/morada_mellensee_1900.jpg);
+		background-image: url(../../images/hero/morada_alexisbad_1900.jpg);
 	}
 	
 	#promotion {
-		background: url("../../images/hero/spreewald.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+		background: url("../../images/hero/bode.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
 	}
 }
 
@@ -229,11 +229,11 @@ input.gsc-input,
 @media (min-width: 992px) and (max-width: 1199px) {
 	.keyvisualsteadyhalf {
 		height: 500px;
-		background-image: url(../../images/hero/morada_mellensee.jpg);
+		background-image: url(../../images/hero/morada_alexisbad.jpg);
 	}
 	
 	#promotion {
-		background: url("../../images/hero/spreewald_992.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+		background: url("../../images/hero/bode_992.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
 	}
 }
 
@@ -243,11 +243,11 @@ input.gsc-input,
 @media (min-width: 768px) and (max-width: 991px) {
 	.keyvisualsteadyhalf {
 		height: 400px;
-		background-image: url(../../images/hero/morada_mellensee_991.jpg);
+		background-image: url(../../images/hero/morada_alexisbad_991.jpg);
 	}
 	
 	#promotion {
-		background: url("../../images/hero/spreewald_768.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+		background: url("../../images/hero/bode_768.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
 	}
 }
 
@@ -257,7 +257,7 @@ input.gsc-input,
 @media (max-width: 767px) {
 	.keyvisualsteadyhalf {
 		height: 400px;
-		background-image: url(../../images/hero/morada_mellensee_767.jpg);
+		background-image: url(../../images/hero/morada_alexisbad_767.jpg);
 	}
 	
 	#promotion {
@@ -271,7 +271,7 @@ input.gsc-input,
 @media (max-width: 479px) {
 	.keyvisualsteadyhalf {
 		height: 360px;
-		background-image: url(../../images/hero/morada_mellensee_479.jpg);
+		background-image: url(../../images/hero/morada_alexisbad_479.jpg);
 	}
 	
 	.navbar-fixed-top .navbar-brand {
