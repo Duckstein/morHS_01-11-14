@@ -1,0 +1,281 @@
+/* ================================= *\
+
+	custom css
+	v1.0	2015-08-31	jd
+	v1.5	2017-05-23	jd
+	
+\* ================================= */
+
+
+
+
+/* core overrides
+----------------- */
+
+body {
+	padding-top: 50px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.lead strong {
+	font-weight: 400;
+}
+
+section {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+header {
+	padding-bottom: 30px;
+}
+
+#appetizer {
+	background: #f2f2f2;
+}
+
+.halfimage {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.halfimage .container {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.halfimage h1 {
+	margin-top: 30px;
+}
+
+
+
+
+/* typo
+------- */
+
+body {
+	font-weight: 300;
+}
+
+a {
+    color: #C0392B;
+    text-decoration: none;
+}
+
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: thin dotted;
+    outline-offset: -2px;
+}
+
+h1, h2, h3 {
+	font-weight: 300;
+	margin-top: 0;
+}
+
+.section-header {
+	border-bottom: 1px solid #363636;
+}
+
+
+
+
+/* --------------------------------- *\
+
+	navbar
+
+\* --------------------------------- */
+
+.navbar-fixed-top {
+	border-width: 0;
+}
+
+.navbar-fixed-top .navbar-brand {
+	font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	letter-spacing: .2em;
+}
+
+
+
+
+/* --------------------------------- *\
+
+	hero
+
+\* --------------------------------- */
+
+.keyvisual .col-xs-12 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.keyvisualsteadyhalf {
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	width: 100%;
+}
+
+
+
+
+/* --------------------------------- *\
+
+	kübomare
+
+\* --------------------------------- */
+
+#promotion {
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	color: #ffffff;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+
+
+
+/* --------------------------------- *\
+
+	custom search
+
+\* --------------------------------- */
+
+.gsc-control-cse .gsc-table-result {
+	font-family : inherit;
+}
+
+.gsc-control-cse .gsc-input-box {
+	height : inherit;
+}
+
+input.gsc-input,
+.gsc-input-box,
+.gsc-input-box-hover,
+.gsc-input-box-focus,
+.gsc-search-button, input.gsc-search-button-v2 {
+	box-sizing  : content-box;
+	line-height : normal;
+	margin-top  : 0px;
+}
+
+
+
+
+/* --------------------------------- *\
+
+	cards
+
+\* --------------------------------- */
+
+.carditem {
+    background: #ffffff;
+	margin-bottom: 30px;
+}
+
+.carditem hr {
+    margin-bottom: 15px;
+}
+
+.carditem-body {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.carditem-footer {
+    font-family: "Montserrat",sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0 15px 15px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+
+
+/* --------------------------------- *\
+
+	responsive styles
+
+\* --------------------------------- */
+
+/* lg
+----- */ 
+
+@media (min-width: 1200px) {
+	.keyvisualsteadyhalf {
+		height: 550px;
+		background-image: url(../../images/hero/morada_gotha_1900.jpg);
+	}
+	
+	#promotion {
+		background: url("../../images/hero/wartburg.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+	}
+}
+
+/* md
+----- */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.keyvisualsteadyhalf {
+		height: 500px;
+		background-image: url(../../images/hero/morada_gotha.jpg);
+	}
+	
+	#promotion {
+		background: url("../../images/hero/wartburg_992.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+	}
+}
+
+/* sm
+----- */
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.keyvisualsteadyhalf {
+		height: 400px;
+		background-image: url(../../images/hero/morada_gotha_991.jpg);
+	}
+	
+	#promotion {
+		background: url("../../images/hero/wartburg_768.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+	}
+}
+
+/* xs
+----- */
+
+@media (max-width: 767px) {
+	.keyvisualsteadyhalf {
+		height: 400px;
+		background-image: url(../../images/hero/morada_gotha_767.jpg);
+	}
+	
+	#promotion {
+		background: #7A340D;
+	}
+}
+
+/* xs Portrait
+-------------- */
+
+@media (max-width: 479px) {
+	.keyvisualsteadyhalf {
+		height: 360px;
+		background-image: url(../../images/hero/morada_gotha_479.jpg);
+	}
+	
+	.navbar-fixed-top .navbar-brand {
+		font-size: 11px;
+		letter-spacing: .05em;
+	}
+}
